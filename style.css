@@ -1,0 +1,53 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(255, 244, 142);
+    color: black;
+    display: grid;
+    /*ATIVA P CSS GRID PARA ORGANIZAR  OS ELEMENTOS*/
+    grid-template-columns: 1fr 2fr;
+    /*DEFINE A QUANTIDADEES DE COLUNAS E O TAMANHO*/
+    align-items: center;
+
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Acessórios {
+    display: grid;
+    /* ATIVA O GRID */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    background-color: rgb(255, 216, 40);
+    border-radius: 10px;
+}
+.card img{
+    width: 100px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/*MEDIA QUERY = ELE ADAPTA TODOS OS TIPOS DE RESOLUÇÕES PRP SITE*/
+@media(max-width:800px) {
+    .Acessórios{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+@media( max-width:500px){
+    header{
+        grid-template-columns: 1fr;
+    }
+    .memes{
+        grid-template-columns: 1fr;
+    }
+}
